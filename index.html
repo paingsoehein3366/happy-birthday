@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .cnt{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f0f0f0;
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Kyaw</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Import map for Three.js -->
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js"
+      crossorigin="anonymous"></script>
+
+    <script type="importmap">
+  {
+    "imports": {      
+      "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
     }
-    .img{
-      width: 300px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-  </style>
-</head>
-<body>
-  <div class="cnt">
-  <img class="img" src="happy-birthday-pop-up-card.jpg" alt="">
-  </div>
-</body>
+  }
+  </script>
+  </head>
+
+  <body>
+    <canvas id="bg"></canvas>
+
+    <div class="container">
+      <h1>Happy Birthday</h1>
+      <h1>❤️ Kalaylay ❤️</h1>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+
 </html>
